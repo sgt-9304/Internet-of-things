@@ -1,0 +1,42 @@
+void setup()
+{
+
+  pinMode(LED_BUILTIN,OUTPUT);
+
+}
+
+void loop()
+{
+  
+  digitalWrite(LED_BUILTIN,HIGH);
+
+  delay(200);
+
+  digitalWrite(LED_BUILTIN,LOW);
+
+  delay(50);
+}
+
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+
+***USE CONNECTIVITY AND STUDY THE GPIO (HERE WE HAVE TO PERFORM SAME ON OR OFF BLINK OF LED BUT BY RESISTOR ATTACHED TO ITT HERE WE HAVE TO NOT  USE PUSH BUTTON )****
+
+
+void setup()
+{
+   pinMode(13,OUTPUT);
+}
+
+void loop()
+{
+   digitalWrite(13,OUTPUT)
+
+   delay(400);
+
+   digitalWrite(13,OUTPUT);
+
+   delay(300);
+)
