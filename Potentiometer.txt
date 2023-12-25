@@ -1,0 +1,39 @@
+int pinR=11;
+int pinG=10;
+int pinB=9;
+int potenR;
+int potenG;
+int potenB;
+
+void setup()
+{
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(9,OUTPUT);
+
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  potenR=map(analogRead,0,1023,0,255);
+  potenG=map(analogRead,0,1023,0,255);
+  potenB=map(analogRead,0,1023,0,255);
+
+  analogWrite(pinR,potenR);
+  analogWrite(pinG,potenG);
+  analogWrite(pinB,potenB);
+
+  delay(50);
+
+
+  Serial.print("Red:");
+  Serial.print(potenR);
+  Serial.print("Green:");
+  Serial.print(potenG);
+  Serial.print("Blue:");
+  Serial.print(potenB);
+
+  delay(100);
+
+}
