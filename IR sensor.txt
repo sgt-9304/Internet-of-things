@@ -1,0 +1,25 @@
+void setup()
+{
+  pinMode(12,OUTPUT);
+
+  pinMode(9,INPUT);
+
+  digitalWrite(12,HIGH);                 // output no should be taken 
+
+}
+
+
+void loop()
+{
+  if(digitalRead(9)==1)
+  {
+
+    digitalWrite(12,HIGH);
+
+  }
+
+  else
+  {
+    digitalWrite(12,LOW);
+  }
+}
