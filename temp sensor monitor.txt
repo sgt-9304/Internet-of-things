@@ -1,0 +1,29 @@
+#include<dht.h>
+
+dht DHT;
+
+#define DHT11_PIN A1;
+
+void setup()
+{
+  Serial.begin(9600);
+
+  Serial.println("HUMIDITY(%),\t TEMPERATURE(C)");
+}
+
+void loop()
+{
+  int chk=DHT.read11(DHT11_PIN);
+
+
+  Serial.print(DHT.humidity,1);
+
+
+  Serial.print("\t\t\t");
+
+
+  Serial.print(DHT.temperature,1);
+
+
+  delay(200);
+}
